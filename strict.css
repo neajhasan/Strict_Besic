@@ -1,0 +1,390 @@
+/**Common Css start**/
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+ul, ol,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li a{
+    font-family: 'Lato', sans-serif;
+}
+a, a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+p{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lato', sans-serif;
+    color:#747272;
+}
+b{
+    color: var(--headline);
+}
+img{
+     vertical-align: middle;
+}
+:root{
+    --frist:#F5F9F9;
+    --second: #07b9c6;
+    --headline: #4E4E4E;
+    --hi_text:#A8A8A8;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lato', sans-serif;
+}
+.font{
+    font-family: 'Lato', sans-serif;
+}
+/*Common Css end*/
+/* Back To Top start */
+.back_to_top{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    display: none;
+    z-index: 111;
+   
+}
+/* Back To Top End */
+/* Navbar Part Css Start */
+.menu_bg{
+    background:rgb(242, 240, 240);
+    transition: 0.5s;
+    z-index: 111;
+}
+
+.navbar_part{
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.578);
+    box-shadow: 5px 0px 10px -6px black;
+    z-index: 111;
+}
+.navbar{
+    padding: 12px 0;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--headline);
+    
+}
+.navbar-nav :hover .nav-link.active, .navbar-nav .show>.nav-link{
+    color: var(--second);
+    transition: 0.4s;
+}
+/* Navbar Part Css End */
+/* slider part css start */
+.slider_part{
+  background: url(asestan/img/strict_bg.com.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+.con_head {
+    border-bottom: 1px solid #15A3F9;
+   
+}
+.con_head h1{
+    font-size: 100px;
+    font-weight: 700;
+}
+.slider_con {
+    width: 500px;
+    margin: auto;
+    padding-top: 50px;
+}
+.slider_button button{
+    padding: 10px 20px;
+    border: 1px solid #15A3F9;
+    outline: none;
+    background:transparent;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.slider_button button:hover{
+    background: rgb(131, 222, 223);
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px 30px;
+}
+
+.select {
+    width: 40px;
+    height: 20px;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    clip-path: polygon(50% 79%, 79% 57%, 51% 100%, 18% 58%);
+    margin-bottom: 30px;
+}
+/* slider part css end */
+/* Simple part css start */
+.simple_part{
+    background: var(--frist);
+}
+/* Simple part css End */
+/* service part css start */
+
+.service_con_img{
+    width: 80px;
+    height: 80px;
+    background:#5FC2FF;
+    margin:20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.service_con_main h2{
+    color: black;
+}
+/* service part css end */
+/* Portfolio Part Css Start */
+.portfolio_part{
+    background: var(--frist)
+}
+.portfolio_img{
+    position: relative;
+    overflow: hidden;
+    
+}
+.portfolio_img img{
+    transition: 0.5s;
+
+}
+.portfolio_img:hover img{
+    transform: scale(1.2);
+}
+.img_overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 154, 227, 0.584);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.portfolio_img:hover .img_overlay{
+    opacity: 1;
+}
+.portfolio_icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+/* Portfolio Part Css End */
+/* Signin Part Css start  */
+.signin_part{
+    background: url(asestan/img/footer_bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ 
+}
+
+.signin_part:hover .bg_overlay_01{
+   width: 15%;
+   
+}
+.signin_part:hover .bg_overlay_02{
+   width: 15%;
+   
+}
+.bg_overlay_01{
+    width: 50%;
+    height: 100%;
+    background: rgba(18, 29, 237, 0.701);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 4px solid rgba(255, 0, 0, 0.415);
+    
+}
+.bg_overlay_02{
+    width: 50%;
+    height: 100%;
+    background: rgba(18, 29, 237, 0.701);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.7s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 4px solid rgba(255, 4, 0, 0.453);
+    
+}
+.input input{
+    width: 400px;
+    height: 45px;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background: transparent;
+    color: whitesmoke;
+    transition: 0.5s;
+    overflow: hidden;
+    
+}
+.input input:hover{
+    transform: scale(1.05);
+}
+::placeholder {
+    color: rgb(236, 236, 236);
+    opacity: 1; 
+    overflow: hidden;
+    transition: 0.5s;
+  }
+.textarea textarea {
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    width: 400px;
+}
+.chekbox button{
+    padding: 5px 30px;
+    border: 1px solid rgb(80, 116, 215);
+    border-radius: 5px;
+    margin-left: 143px;
+    background: transparent;
+    color: white;
+    transition: 0.6s;
+    
+}
+.chekbox button:hover{
+    background: linear-gradient(rgb(65, 202, 252),rgb(3, 127, 121));
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 5px 35px;
+   
+}
+.chekbox input{
+    color: red;
+}
+
+/* Signin Part Css End */
+/* Footer Part Css Start  */
+.footer_part{
+  padding: 15px 0;
+}
+.footer_con_icon a i{
+    width: 30px;
+    height: 30px;
+    background: #15A4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 3px; 
+    transition: 0.7s;
+    
+}
+.footer_con_icon a i:hover{
+    background: rgb(239, 235, 235);
+    color: red;
+    transform: rotate(500deg);
+    border-radius: 50px;
+}
+
+.footer_con a:hover{ color: rgb(36, 94, 239);
+    transition: 0.5s;
+    
+}
+
+/* Footer Part Css End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px){}
+@media (min-width: 768px) and (max-width: 991px){}
+@media (min-width: 576px) and (max-width: 767px){
+    .portfolio_con{
+        width: 365px;
+        margin: auto;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px){
+    /* Slider_part_start */
+    .slider_con {
+        width: 300px;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .con_head h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    /* Slider_part_end */
+    /* signup part start */
+    .input input{
+    width: 280px;
+    height: 45px;  
+}
+.textarea textarea{
+    width: 280px;
+}
+.chekbox button{
+    display: block;
+    margin: 30px auto;
+}
+.footer_con p{
+    display: none;
+}
+
+    /* signup part end */
+}
+@media (min-width: 150px) and (max-width: 319px){
+    /* Slider_part_start */
+    .slider_con {
+        width: 250px;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .con_head h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    /* Slider_part_end */
+}
